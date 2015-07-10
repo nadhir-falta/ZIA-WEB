@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Web Guru</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Zeen Web</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 		<!-- Latest compiled and minified CSS -->
@@ -14,45 +16,35 @@
 
 		<script type="text/javascript" src="js/libs/angular.js"></script>
 		<script type="text/javascript" src="js/libs/backstretch.js"></script>
-		<script type="text/javascript" src="js/libs/nav.js"></script>
-		<script type="text/javascript" src="js/libs/custom.js"></script>
-
-		<script type="text/javascript" src="js/app.js"></script>
+		
 		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/flexslider.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body ng-app="angularHook">
-		<header class=" header navbar-inverse " role="banner">
+		<header class="header navbar-inverse " role="banner">
 			<div class="container">
-				<nav class="navbar">
+				<nav id="#plazart-mainnav" class="navbar">
 					<div class="container-fluid">
-
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed"
-								data-toggle="collapse"
-								data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span> <span
-									class="icon-bar"></span> <span class="icon-bar"></span> <span
-									class="icon-bar"></span>
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span> 
+								<span class="icon-bar"></span> 
+								<span class="icon-bar"></span> 
+								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="#">Brand</a>
+							<a class="navbar-brand class="page-scroll"" href="#">Brand</a>
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse"
-							id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li><a href="#button-scroll">About</a></li>
-								<li class="dropdown"><a href="#" class="dropdown-toggle"
-									data-toggle="dropdown" role="button" aria-expanded="false">Dropdown
-										<span class="caret"></span>
-								</a>
-									<ul class="dropdown-menu" role="menu">
-										<li><a href="#">Action</a></li>
-										<li class="divider"></li>
-										<li><a href="#">Separated link</a></li>
-									</ul></li>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul id="nav" class="nav navbar-nav">
+								<li class="current"><a class="page-scroll" href="#home">Home</a></li>
+								<li><a href="#aboutUs">About</a></li>
+								<li><a href="#weDo">What We Do</a></li>
+								<li><a href="#aboutNadhir">About Nadhir</a></li>
+								<li><a href="#contactUs">Contact</a></li>
 							</ul>
 						</div>
 						<!-- /.navbar-collapse -->
@@ -61,16 +53,94 @@
 				</nav>
 			</div>
 		</header>
-		
-		<div ng-include="'home.html'"></div>
+		<section id="home" class="fullslide ">
+	<div class="container-fluid">
+		<div class="row" id="fullslide">
+			<div id="tz-fullslide"class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+				<div class="tz-module module " id="Mod138">
+					<div class="module-inner">
+						<div class="module-ct">
+							<div class="custom">
+								<div id="homepage">
+									<div class="overlay">&nbsp;</div>
+									<div class="overlay-color">&nbsp;</div>
+									<div class="container homepage-inner animated fadeInUp">
+										<img src="/images/logo-sh-pink.png" alt="">
+										<div class="slogan">LET'S GET YOU A</div>
+										<div class="site-name">WEBSITE</div>
+										<div class="desc">START YOUR WEB DESIGN JOURNEY WITH US</div>
+									</div>
+									<div id="button-scroll" class="bounce">
+										<a class="page-scroll" href="#aboutUs">LEARN MORE <br>
+										<img src="../assets/rsz_expanddown.png" alt=""></a>
+									</div>
+									<hr>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+		<div ng-include src=" 'home.html' "></div>
 		<!-- **************************************************************************************** -->
-		<div ng-include="'about.html'"></div>
+		<div ng-include src=" 'about.html' "></div>
+
+		<div ng-include src=" 'services.html' "></div>
 
 		<!-- ======================================================================================== -->
-		<div ng-include="'offers.html'"></div>
-		<div ng-include="'contact.html'"></div>
+		<!-- div ng-include="'offers.html'"></div -->
+		<div ng-include src=" 'wedo.html' "></div>
 
 
+		<div ng-include src=" 'aboutNadhir.html' "></div>
+
+		<div ng-include src=" 'contact.html' "></div>
+		
+
+		<script type="text/javascript" src="js/libs/nav.js"></script>
+		<script type="text/javascript" src="js/libs/easing.min.js"></script>
+		<script type="text/javascript" src="js/libs/custom.js"></script>
+		<script type="text/javascript" src="js/libs/fitText.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.flexslider.js"></script>
 	</body>
+	<footer id="tz-footer-wrapper" class="footer ">
+		<div class="container">
+			<div class="row">
+				<div id="tz-footer2">
+					<div class="nsb_container">
+						<a id="l3" target="_blank" rel="nofollow" href="http://twitter.com/">
+							<img title="Twitter" src="../assets/twitter.png">
+						</a>
+						<a id="ll1" target="_blank" rel="nofollow" href="https://github.com/nadhir-falta">
+							<img title="GitHub" src="../assets/github.png">
+						</a>
+						<a id="ll1" target="_blank" rel="nofollow" href="https://www.linkedin.com/in/nadhirfalta">
+							<img title="LinkedIn" src="../assets/Linkedin.png">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="tz-footer1">
+						<div class=" col-md-4 col-sm-12 col-xs-12 info">
+							<img src="../assets/phone.png"/>
+							<p class="tel">248-633-6512</p>
+						</div>
+						<div class=" col-md-4 col-sm-12 col-xs-12 info">
+							<img src="../assets/email.png"/>
+							<p class="email">nadhir_falta@yahoo.com</p>
+						</div>
+						<div class=" col-md-4 col-sm-12 col-xs-12 info">
+							<img src="../assets/location.png"/>
+							<p class="location">Detroit, MI USA</p>
+						</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </html>
 
