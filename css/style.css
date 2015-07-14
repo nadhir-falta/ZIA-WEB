@@ -16,6 +16,10 @@ html {
   font-family: 'oswald';
   src: url('../assets/Oswald-Regular-webfont.woff');
 }
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('../assets/flexslider-icon.woff');
+}
 
 #tz-fullslide-wrapper {
   margin: 0 !important;
@@ -151,7 +155,7 @@ html {
 }
 
 #button-scroll {
-  bottom: 25px;
+  bottom: 55px;
   display: block;
   height: 80px;
   left: 50%;
@@ -272,7 +276,7 @@ hr {
 }
 
 .title-big {
-  padding-top: 30px;
+  padding-top: 70px;
   text-align: center;
 }
 p.history {
@@ -669,7 +673,7 @@ h1.title-smooth span {
 .whatwedo .weDoBestTitle {
   margin-top: 0px;
   padding-bottom: 60px;
-  padding-top: 60px;
+  padding-top: 75px;
   color: #fff;
   text-align: center;
 }
@@ -830,6 +834,10 @@ h1.title-smooth span {
   .desc {
     margin-top: 10px;
   }
+  #button-scroll {
+    top: 75% !important;
+
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -890,6 +898,7 @@ h1.title-smooth span {
 
 .aboutMeTitle {
   text-align: center;
+  padding-top: 60px;
 }
 
 .whoAmI {
@@ -1052,6 +1061,7 @@ services
 
 .flex-control-nav {
   height: 25px;
+  bottom: 15px;
 }
 .flex-direction-nav {
   height: 25px; 
@@ -1089,6 +1099,22 @@ Waypoints
     -moz-animation-duration: 2s;
     -o-animation-duration: 2s;
     animation-duration: 2s;
+}
+
+.flex-direction-nav a {
+  opacity: 88;
+}
+
+.flex-direction-nav .flex-prev {
+  left: 0px;
+  background-color: #51A4DC;
+  padding-right: 30px;
+}
+
+.flex-direction-nav .flex-next {
+  right: 0px;
+  background-color: #51A4DC;
+  padding-right: 30px;
 }
 
 /* 480px (WVGA - Low End Windows Phone) */

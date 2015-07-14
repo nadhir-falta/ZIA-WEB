@@ -21,7 +21,7 @@ jQuery(window).load(function () {
     }
 
     amend();
-// if user resizes the screen
+    // if user resizes the screen
     jQuery(window).resize(function () {
         amend();
     });
@@ -132,7 +132,7 @@ jQuery(window).load(function () {
     $('#servicesSlider').flexslider({
         animation: "slide",
         touch: true,
-        directionNav: false,
+        directionNav: true,
         pauseOnHover: false,
         slideshowSpeed: 6000, 
     });
